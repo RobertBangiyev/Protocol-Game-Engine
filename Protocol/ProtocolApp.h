@@ -1,5 +1,6 @@
 #pragma once
 #include "ProtocolUtils.h"
+#include "GameWindow.h"
 
 namespace Protocol
 {
@@ -12,7 +13,7 @@ namespace Protocol
 	protected:
 		ProtocolApp();
 	private:
-
+		GameWindow mGameWindow;
 	};
 }
 

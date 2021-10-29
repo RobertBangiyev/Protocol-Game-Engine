@@ -2,6 +2,7 @@
 
 #include "ProtocolUtils.h"
 #include "ProtocolApp.h"
+#include "GameWindow.h"
 
 #define START_PROTOCOL_GAME(classname) \
 int main()\

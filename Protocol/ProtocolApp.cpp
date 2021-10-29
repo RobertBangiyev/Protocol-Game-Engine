@@ -6,14 +6,15 @@ namespace Protocol {
 	void ProtocolApp::Run() {
 		std::cout << "Protocol is running..." << std::endl;
 
-		GLFWwindow* window;
-		glfwInit();
-		window = glfwCreateWindow(800, 600, "Test", NULL, NULL);
+
+		mGameWindow.CreateWindow(800, 600, "Test");
 
 		while (true) {
 			OnUpdate();
-			glfwSwapBuffers(window);
-			glfwPollEvents();
+
+			mGameWindow.SwapBuffers();
+
+			mGameWindow.PollEvents();
 		}
 	}
 
@@ -22,6 +23,5 @@ namespace Protocol {
 	}
 
 	ProtocolApp::ProtocolApp() {
-
 	}
 }
