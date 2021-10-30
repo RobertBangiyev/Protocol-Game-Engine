@@ -5,11 +5,11 @@
 namespace Protocol{
 	GameWindow::GameWindow() {
 #ifdef PROTOCOL_WINDOWS
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #elif PROTOCOL_MAC
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #elif PROTOCOL_LINUX
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #else
 	#only_Windows_Linux_Mac_are_supported
 #endif

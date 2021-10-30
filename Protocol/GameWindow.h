@@ -1,4 +1,5 @@
 #pragma once
+#include "pch.h"
 #include "ProtocolUtils.h"
 #include "WindowImplementation.h"
 
@@ -14,6 +15,6 @@ namespace Protocol {
 		int GetWindowHeight() const;
 
 	private:
-		WindowImplementation* mWindow;
+		std::unique_ptr<WindowImplementation> mWindow;
 	};
 }
