@@ -1,5 +1,6 @@
 1. The game contains a Defense Points Counter at the top left
 2. When the counter reaches 0, you get a Game Over screen
+3. You need to restart from Visual Studio when that happens
 3. The counter goes down as viruses make it past you and disappear off the screen
 4. Viruses spawn in ones every second, and then in pairs once you survive for 35 seconds, and in trios once you get to 70 seconds
 5. Viruses spawn on the right side of the screen, and move left, where you are defending
