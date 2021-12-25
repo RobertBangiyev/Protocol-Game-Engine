@@ -1,0 +1,11 @@
+1. The game contains a Defense Points Counter at the top left
+2. When the counter reaches 0, you get a Game Over screen
+3. The counter goes down as viruses make it past you and disappear off the screen
+4. Viruses spawn in ones every second, and then in pairs once you survive for 35 seconds, and in trios once you get to 70 seconds
+5. Viruses spawn on the right side of the screen, and move left, where you are defending
+5. Every 10.5 seconds, a powerup spawns, which could be either a health pack, a vaccine, or a speed boost
+6. You need to collide with the powerup to get the powerup boost
+6. The health pack increases your Defense Points by 5 and the speed boost increases your speed by 5
+7. The first vaccine shot upgrades your character to level 1, and loads the image associated with that level
+8. The second vaccine does the same, but with level 2, but also gives you the ability to shoot a lightning bolt. You can only have one lightning bolt on screen at a time, and it disappears upon hitting a virus
+9. The third vaccine loads the image associated with level 3 for your character, and every vaccine after increases your Defense Points by 3

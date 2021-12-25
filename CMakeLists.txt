@@ -15,6 +15,10 @@ elseif(UNIX)
 	add_definitions(-DPROTOCOL_LINUX)
 endif()
 
+add_definitions(-DPROTOCOL_OPENGL)
+
 add_subdirectory(MyGame)
 add_subdirectory(Protocol)
 add_subdirectory(glfw)
+add_subdirectory(glad)
+add_subdirectory(stbi)

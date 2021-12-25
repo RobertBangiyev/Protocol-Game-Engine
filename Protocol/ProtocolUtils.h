@@ -9,3 +9,9 @@
 #else
 	#define PROTOCOL_API
 #endif
+
+#ifdef PROTOCOL_DEBUG
+	#define PROTOCOL_LOG(x) std::cout<<x<<std::endl;
+#else
+	#define PROTOCOL_LOG(x)
+#endif
